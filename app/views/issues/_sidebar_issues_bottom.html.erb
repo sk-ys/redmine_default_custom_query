@@ -4,7 +4,7 @@
     var allIssuesPath = '<%=j project_issues_path(@project, set_filter: 1) %>';
 
     var showIssuesButton = $('#sidebar a[href="' + allIssuesPath + '"]');
-    if (showIssuesButton.size() > 0) {
+    if (showIssuesButton.length > 0) {
       showIssuesButton.attr('href', allIssuesPath + '&without_default=1');
     }
 
